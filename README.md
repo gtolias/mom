@@ -11,6 +11,6 @@ Run the following script:
 ```
 >> mom
 ```
-##Prerequisites
+## Prerequisites
 
 Package for diffusion proposed in our CVPR17 paper. If not available, it is automatically downloaded within the main script. 
