@@ -17,5 +17,8 @@ Package for diffusion proposed in our CVPR17 paper:
 
 > A. Iscen, G. Tolias, Y. Avrithis, T. Furon, O. Chum. "Efficient Diffusion on Region Manifolds: Recovering Small Objects with Compact CNN Representations", CVPR 2017
 
+Github Link:
+https://github.com/ahmetius/diffusion-retrieval
+
 
 If not available, it is automatically downloaded within the main script. 
