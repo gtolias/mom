@@ -11,7 +11,8 @@
 % 	rest       : additional information for each negative vector
 function [neg, rest] = negmine(V, anc_idx, L, k, maxpoolsize)
 
-	parfor i = 1:numel(anc_idx)
+	% parfor i = 1:numel(anc_idx)
+	for i = 1:numel(anc_idx)
 		[neg{i}, rest{i}] = negmine_single(V, single(anc_idx(i)), L, k, maxpoolsize);
 	end
 

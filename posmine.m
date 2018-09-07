@@ -11,7 +11,8 @@
 % 	rest       : additional information for each positive vector
 function [pos, rest] = posmine(V, anc_idx, L, k, maxpoolsize)
 
-	parfor i = 1:numel(anc_idx)
+	% parfor i = 1:numel(anc_idx)
+	for i = 1:numel(anc_idx)
 		[pos{i}, rest{i}] = posmine_single(V, single(anc_idx(i)), L, k, maxpoolsize);
 	end
 

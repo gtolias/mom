@@ -42,6 +42,7 @@ else
 end
 
 fprintf('pool select \n');	
+fprintf('if parfor available - uncomment in posmine.m and negmine.m for speed-up\n');	
 L = speye(size(G)) - 0.99 * transition_matrix(G); % Laplacian, alpha = 0.99 used in CVPR18
 
 k = 50;  % parameter k in CVPR18, equation (6)
@@ -64,7 +65,7 @@ return; % comment out to show examples of the selection
 fprintf('Save some examples on disk\n');
 
 % load image thumbnails (used only to show some examples)
-if ~exist('img_1M_thumbgray.mat.mat')
+if ~exist('img_1M_thumbgray.mat')
 	% download and load the input descriptors (extracted with vgg-imagenet-rmac)
 	system('wget http://cmp.felk.cvut.cz/~toliageo/ext/mom/img_1M_thumbgray.mat');
 	load('img_1M_thumbgray.mat');
