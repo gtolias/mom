@@ -49,7 +49,8 @@ k = 50;  % parameter k in CVPR18, equation (6)
 maxpoolsize = 50;  % keep not more than
 [pos, prest] = posmine(V, anc_idx, L, k, maxpoolsize); 
 
-k = 10000; % parameter k in CVPR18, equation (6)
+k = 10000; % parameter k in CVPR18, equation (6) setup for retrieval 
+% k = 100; % parameter k in CVPR18, equation (6) setup for fine-grained recognition
 maxpoolsize = 50;  % keep not more than
 [neg, nrest] = negmine(V, anc_idx, L, k, maxpoolsize);
 
