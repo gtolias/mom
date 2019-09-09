@@ -9,15 +9,15 @@ It implements unsupervised selection of training pairs (in MATLAB) and training 
 
 ## Prerequisites
 
-1. [Package](https://github.com/ahmetius/diffusion-retrieval) for diffusion proposed in our CVPR17 paper: 
+1. [Package](https://github.com/ahmetius/diffusion-retrieval) for diffusion proposed in our CVPR17 paper (automatically downloaded): 
 
 > A. Iscen, G. Tolias, Y. Avrithis, T. Furon, O. Chum. "Efficient Diffusion on Region Manifolds: Recovering Small Objects with Compact CNN Representations", CVPR 2017
 
-If not available, it is automatically downloaded within the main script. 
+
 
 2. MatConvNet:
 
-It is used to extract descriptor for training images using a pre-trained network. This will be the input to the mining process. The code is tested with MatConvNet version 1.0-beta25 in MATLAB R2016b.
+It is used to extract descriptors for training images using a pre-trained network. This will be the input to the mining process. The code is tested with MatConvNet version 1.0-beta25 in MATLAB R2016b.
 
 3. Pytorch: 
 
@@ -37,7 +37,7 @@ Run the following script through MATLAB:
 
 ### Fine-grained categorization
 
-Training, in the form of metric learning, is performed for fine-grained bird categorization. The initial descriptor extraction and selection by MoM is performed in MATLAB. The training, based on an earlier version of [this package](https://github.com/vadimkantorov/metriclearningbench), is then performed in Python/Pytorch.
+Training, in the form of metric learning, is performed for fine-grained bird categorization. The initial descriptor extraction and selection by MoM is performed in MATLAB. The training, based on an earlier version of [this package](https://github.com/vadimkantorov/metriclearningbench), is performed in Python/Pytorch.
 
 Download CUB_200_2011 with:
 
@@ -45,13 +45,13 @@ Download CUB_200_2011 with:
 python py/download_dataset.py
 ```
 
-Extract descriptors for training images by running through MATLAB:
+Extract descriptors for training images by running in MATLAB:
 
 ```
 >> run mat/extract_descriptors_CUB
 ```
 
-Perform data selection for training by running through MATLAB:
+Perform data selection for training by running in MATLAB:
 
 ```
 >> run mat/mom_CUB
