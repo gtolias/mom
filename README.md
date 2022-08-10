@@ -1,6 +1,6 @@
 # Mining on Manifolds: Metric Learning Without Labels
 
-This is a Matlab package for our paper:
+This is a Matlab/Python package for our paper:
 
 > A. Iscen, G. Tolias, Y. Avrithis, O. Chum. "Mining on Manifolds: Metric Learning Without Labels", CVPR 2018
 
